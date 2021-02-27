@@ -1,0 +1,232 @@
+/*===== ase styles =====*/
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --theme-color-1: #00032e;
+    --theme-color-2: #111;
+    --text-color: #e1e1e1;
+}
+
+/*===== Hero section =====*/
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--text-color);
+    background: linear-gradient(123deg, #00032e, #003553);
+}
+
+.hero__intro {
+    text-align: left;
+    position: relative;
+    left: 10rem;
+}
+
+.hero__name {
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+}
+
+.hero__title {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+}
+
+.hero__resume {
+    text-decoration: none;
+    width: 150px;
+    height: 100px;
+    color: #e1e1e1;
+    background: linear-gradient(123deg, #00032e, #003553);
+}
+/*===== End of Hero section =====*/
+
+/*===== About me section =====*/
+.aboutme {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme__container {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px 0px rgb(0, 0, 0);
+    background: linear-gradient(123deg, #00032e, #003553);
+    transition: 0.4s;
+    overflow: hidden;
+    color: var(--text-color);
+    padding: 10px 10px 10px 0;
+}
+
+.aboutme__img {
+    margin-right: 50px;
+}
+
+.aboutme__img > img {
+    object-fit: contain;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aboutme__title {
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.aboutme__info {
+    margin-right: 30px;
+    font-size: 1.05rem;
+}
+
+.aboutme__social {
+    margin-top: 20px;
+}
+/*===== End of About me section =====*/
+
+/*===== Project section =====*/
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+    background: linear-gradient(123deg, #00032e, #003553);
+    /*padding: 200px;*/
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13rem;
+}
+
+.project:first-child {
+    margin-top: 10rem;
+}
+
+/*.project:nth-child(2) {
+    flex-direction: row-reverse;
+}*/
+
+.project__img > img{
+    object-fit: contain;
+    width: 700px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.project__img > img:hover{
+    transform: scale(1.05);
+}
+
+.project__info {
+    padding: 30px;
+    background-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project__title {
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.project__about {
+    margin-bottom: 10px;
+}
+
+.project__tech {
+    color: rgb(155, 155, 155);
+    font-size: 15px;
+}
+
+.project__urls {
+    margin-top: 20px;
+}
+
+.project__urls > a {
+    color: var(--text-color);
+    padding: 10px;
+    background-color: #00032e;
+    border-radius: 200px;
+    text-decoration: none;
+}
+/*===== End of Project section =====*/
+
+/*===== Contact Me section =====*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__details {
+    display: flex;
+    background: linear-gradient(123deg, #00032e, #003553);
+    padding: 50px;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+.contact__info {
+    margin-right: 50px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact__info > p {
+    margin-bottom: 3rem;
+    text-align: right;
+}
+
+.contact__form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form > 
+form input,
+textarea {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    caret-color: #fff;
+    border-radius: 7px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: #00032e;
+    color: #fff
+}
+/*===== End of Contact Me section =====*/
