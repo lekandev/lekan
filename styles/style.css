@@ -8,6 +8,11 @@
     font-family: 'Josefin Sans', monospace;
 }
 
+::selection {
+    background-color: #00032e;
+    color: var(--text-color);
+}
+
 :root {
     --theme-color-1: linear-gradient(123deg, #00032e, #003553);
     --theme-color-2: #fff;
@@ -35,7 +40,7 @@
 }
 
 .hero__name {
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: 0.3rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -63,6 +68,21 @@
 
 .hero__intro > a > button:hover {
     transform: scale(1.08);
+}
+
+/* Media queries for hero section */
+@media screen and (max-width: 664px) {
+    .hero__intro {
+        left: 7%;
+    }
+
+    .hero__name {
+        font-size: 4rem;
+    }
+
+    .hero__title {
+        font-size: 1.5rem;
+    }
 }
 /*===== End of Hero section =====*/
 
@@ -112,6 +132,23 @@
 .aboutme__social {
     margin-top: 20px;
 }
+
+/* Media queries for aboutme section */
+@media screen and (max-width: 664px) {
+    .aboutme {
+        height: 450px;
+    }
+
+    .aboutme__container {
+        flex: none;
+        width: 350px;
+        padding: 10px;
+    }
+
+    .aboutme__img {
+        display: none;
+    }
+}
 /*===== End of About me section =====*/
 
 /*===== Skills section =====*/
@@ -140,6 +177,16 @@
 
 .skills__skill:hover {
     transform: scale(1.07);
+}
+
+/* Media queries for aboutme section */
+@media screen and (max-width: 664px) {
+    .skills__container {
+        flex: none;
+        flex-direction: column;
+        height: 200px;
+        overflow-y: scroll;
+    }
 }
 /*===== End of Skills section =====*/
 
@@ -211,6 +258,29 @@
     border-radius: 200px;
     text-decoration: none;
 }
+
+/* Media queries for project section */
+@media screen and (max-width: 664px) {
+    .projects {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .project {
+        flex-direction: column;
+        margin-bottom: 7rem;
+    }
+
+    .project__img > img {
+        width: 370px;
+    }
+
+    .project__info {
+        padding: 25px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+}
 /*===== End of Project section =====*/
 
 /*===== Experience section =====*/
@@ -247,6 +317,23 @@ li {
     margin-left: 20px;
 }
 
+
+/* Media queries for experience section */
+@media screen and (max-width: 664px) {
+    .experience__container {
+        flex-direction: column;
+    }
+
+    .experience__column {
+        padding: 20px;
+        width: auto;
+    }
+
+    .experience__column:first-child {
+        border-right: none;
+        border-bottom: 1px solid #333333;
+    }
+}
 /*===== End of Experience section =====*/
 
 /*===== Contact Me section =====*/
@@ -303,8 +390,27 @@ textarea:focus {
     outline: none;
 }
 
-::selection {
-    background-color: #00032e;
-    color: var(--text-color);
+/* Media queries for experience section */
+@media screen and (max-width: 664px) {
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact__details {
+        flex-direction: column;
+        width: inherit;
+        padding: 30px;
+    }
+
+    .contact__info > p {
+        text-align: center;
+    }
+
+    .contact__form > 
+    form input,
+    textarea {
+        width: 100%;
+    }
 }
 /*===== End of Contact Me section =====*/
