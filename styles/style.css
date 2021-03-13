@@ -1,4 +1,4 @@
-/*===== ase styles =====*/
+/*===== base styles =====*/
 *,
 ::after,
 ::before {
@@ -26,7 +26,7 @@ body {
     background: var(--theme-color-1);
 }
 
-.fas {
+.fab {
     font-size: 17px;
 }
 
@@ -358,6 +358,10 @@ body {
 
 .experience__column:first-child {
     border-right: 1px solid var(--text-primary);
+}
+
+.experience__workplace {
+    color: var(--text-primary);
 }
 
 .experience__column > h2,
