@@ -13,6 +13,16 @@
     color: var(--text-color);
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color-3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 :root {
     --sum: #0f121f;
     --theme-color-1: #0B0C10;
