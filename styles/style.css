@@ -32,6 +32,10 @@
     --text-color: #C5C6C7;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--theme-color-1);
 }
