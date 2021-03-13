@@ -14,9 +14,16 @@
 }
 
 :root {
-    --theme-color-1: linear-gradient(260deg, #00032e, #003553);
-    --theme-color-2: #fff;
-    --text-color: #e1e1e1;
+    --sum: #0f121f;
+    --theme-color-1: #0B0C10;
+    --theme-color-2: #1f2833;
+    --theme-color-3: #45A29E;
+    --text-primary: #66FCF1;
+    --text-color: #C5C6C7;
+}
+
+body {
+    background: var(--theme-color-1);
 }
 
 .fas {
@@ -29,8 +36,12 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    color: var(--text-color);
-    background: var(--theme-color-1);
+    /* background-image: url("../assets/images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--theme-color-1);
+    opacity: 0.2; */
 }
 
 .hero__intro {
@@ -44,6 +55,11 @@
     letter-spacing: 0.3rem;
     font-weight: 700;
     margin-bottom: 10px;
+    /* anims */
+    color: transparent;
+    position: relative;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
 }
 
 .hero__title {
@@ -51,6 +67,24 @@
     letter-spacing: 0.1rem;
     font-weight: 100;
     margin-bottom: 15px;
+    /* anims */
+    width: fit-content;
+    color: transparent;
+    position: relative;
+    animation: text_reveal2 .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+/* anims */
+.hero span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--theme-color-3);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
 }
 
 .hero__intro > a > button {
@@ -61,7 +95,7 @@
     border: none;
     outline: none;
     color: var(--text-color);
-    background: #000225;
+    background: var(--theme-color-3);
     transition: 0.4s;
     cursor: pointer;
 }
@@ -84,6 +118,31 @@
         font-size: 1.5rem;
     }
 }
+
+/* Keyframes for text reveal animation */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: var(--text-primary);
+    }
+}
+
+@keyframes text_reveal2 {
+    100% {
+        color: var(--text-color);
+    }
+}
 /*===== End of Hero section =====*/
 
 /*===== About me section =====*/
@@ -100,13 +159,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
     border-radius: 15px;
-    background: var(--theme-color-1);
+    background: var(--theme-color-2);
     overflow: hidden;
     color: var(--text-color);
-    padding: 10px 10px 10px 0;
+    padding: 40px 10px 10px 10px;
     /* transform: skewY(0.5deg); */
 }
 
@@ -118,6 +175,7 @@
 .aboutme__title {
     margin-bottom: 10px;
     letter-spacing: 0.2rem;
+    color: var(--text-primary);
 }
 
 .aboutme__info {
@@ -154,7 +212,6 @@
     align-items: center;
     width: 100%;
     height: 250px;
-    background-color: #e1e1e1;
     list-style: none;
 }
 
@@ -163,7 +220,7 @@
 }
 
 .skills__skill {
-    background-color: #003553;
+    background: var(--theme-color-3);
     color: var(--text-color);
     border-radius: 3px;
     margin: 10px;
@@ -193,7 +250,6 @@
     flex-direction: column;
     padding-left: 150px;
     padding-right: 150px;
-    background: var(--theme-color-1);
 }
 
 .projects__header {
@@ -224,12 +280,14 @@
 
 .project__info {
     padding: 30px;
-    background-color: #fff;
+    background-color: var(--theme-color-2);
+    color: var(--text-color);
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .project__title {
+    color: var(--text-primary);
     margin-bottom: 10px;
     letter-spacing: 0.2rem;
 }
@@ -250,7 +308,7 @@
 .project__urls > a {
     color: var(--text-color);
     padding: 8px;
-    background-color: #00032e;
+    background-color: var(--theme-color-3);
     border-radius: 200px;
     text-decoration: none;
 }
@@ -286,7 +344,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #e1e1e1;
+    color: var(--text-color);
 }
 
 .experience__container {
@@ -299,7 +357,7 @@
 }
 
 .experience__column:first-child {
-    border-right: 1px solid #333333;
+    border-right: 1px solid var(--text-primary);
 }
 
 .experience__column > h2,
@@ -343,7 +401,7 @@ li {
 
 .contact__details {
     display: flex;
-    background: var(--theme-color-1);
+    background: var(--theme-color-2);
     padding: 50px;
     color: var(--text-color);
     border-radius: 10px;
@@ -374,10 +432,12 @@ textarea {
     height: 50px;
     margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.37);
+    caret-color: #fff;
+    color: var(--text-color);
     border: none;
     padding: 15px;
     font-size: 1.1rem;
-    caret-color: #fff;
+    
     border-radius: 7px;
 }
 
