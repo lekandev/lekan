@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/about-pic.jpg" type="image/x-icon">
+    <meta name="author" content="Mohammed Kabir Hussaini">
+    <meta name="keywords" content="Developer, portfolio, Lekan, lekandev, Software developer, Mohammed Kabir Hussaini">
+    <meta name="description" content="A Frontend Developer Portfolio Website for Mohammed Kabir Hussaini">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- javascript -->
     <script defer src="./scripts/app.js"></script>
+    <!-- animejs library -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@500&family=Redressed&display=swap" rel="stylesheet">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/1389e4cdbd.js" crossorigin="anonymous"></script>
     <title>Lekan | Dev</title>
 </head>
 <body>
+    <nav>
+        <div class="logo"><img src="./assets/images/logo.png" alt="logo"></div>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+        <h2 class="res">res</h2>
+    </nav>
+
     <section class="hero">
         <div class="hero__intro">
             <h1 class="hero__name">Mohammed Kabir Hussaini<span></span></h1>
@@ -22,7 +40,7 @@
         </div>
     </section>
 
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
         <div class="aboutme__container">
             <div class="aboutme__img">
                 <img src="./assets/images/about-pic.jpg" alt="">
@@ -42,23 +60,23 @@
                     <i class="fab fa-twitter"></i>
                 </div>
             </div>
+            <div class="aboutme__skills">
+                <h3>Skills</h3>
+                <div class="aboutme__skills__container">
+                    <div class="aboutme__skill"><i class="fas fa-html5"></i>HTML5</div>
+                    <div class="aboutme__skill"><i class="fas fa-css3"></i>CSS3</div>
+                    <div class="aboutme__skill"><i class="fas fa-javascript"></i>JavaScript</div>
+                    <div class="aboutme__skill"><i class="fas fa-react"></i>React</div>
+                    <div class="aboutme__skill">NextJs</div>
+                    <div class="aboutme__skill">SASS</div>
+                    <div class="aboutme__skill">Styled Components</div>
+                    <div class="aboutme__skill">Material UI</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="skills">
-        <div class="skills__container">
-            <div class="skills__skill"><i class="fas fa-html5"></i>HTML5</div>
-            <div class="skills__skill"><i class="fas fa-css3"></i>CSS3</div>
-            <div class="skills__skill"><i class="fas fa-javascript"></i>JavaScript</div>
-            <div class="skills__skill"><i class="fas fa-react"></i>React</div>
-            <div class="skills__skill">NextJs</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">Styled Components</div>
-            <div class="skills__skill">Material UI</div>
-        </div>
-    </section>
-
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="projects__header">Real World Projects</h2>
         <div class="project">
             <div class="project__img">
@@ -210,8 +228,8 @@
         <!-- <h2>Check out more Projects at <a href="https://github.com/lekandev?tab=repositories">Github</a></h2> -->
     </section>
 
-    <section class="experience">
-        <!-- <h1>Where I've Worked</h1> -->
+    <section class="experience" id="experience">
+        <h2>Where I've Worked</h2>
         <div class="experience__container">
             <div class="experience__column">
                 <h2 class="experience__workplace">UpWork</h2>
@@ -238,21 +256,23 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contactme">
         <div class="contact__details">
-            <div class="contact__info">
-                <p class="contact__phone"><i class="fas fa-phone"></i> 08122722975</p>
-                <p class="contact__email"><i class="fas fa-mail"></i> lekanphysicist@gmail.com</p>
-                <p class="contact__phone"><i class="fas fa-address"></i> Lokogoma, Abuja, Nigeria</p>
-            </div>
+            <p>Feel free to contact me for full time positions, contracts or just to chat!😁 </p>
             <div class="contact__form">
-                <form action="/">
+                <form action="">
                     <input type="text" class="name" placeholder="Your name">
                     <input type="text" class="email" placeholder="Your email">
                     <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Submit" class="submit">
                 </form>
+                <!-- <div class="thank-you-msg"></div> -->
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>Copyright 2021, All rights Reserved. Made with 💖 by <a href="https://www.twitter.com/lekandev">Lekandev</a></p>
+    </footer>
 </body>
 </html>
