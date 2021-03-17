@@ -105,6 +105,25 @@ nav a {
     opacity: 0.2; */
 }
 
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--theme-color-3);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.box:nth-child(2) {
+    right: 10px;
+    bottom: 70px;
+}
+
+.box:nth-child(3) {
+    right: 70px;
+    bottom: 10px;
+}
+
 .hero__intro {
     text-align: left;
     position: relative;
@@ -157,12 +176,15 @@ nav a {
     outline: none;
     color: var(--text-tertiary);
     background: var(--theme-color-3);
-    transition: 0.4s;
+    transition: all ease-in 0.4s;
     cursor: pointer;
 }
 
 .hero__intro > a > button:hover {
     transform: scale(1.08);
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--theme-color-3);
 }
 
 /* Media queries for hero section */
@@ -245,6 +267,7 @@ nav a {
     margin: 30px;
     font-size: 1.05rem;
     font-family: 'montserrat', sans-serif;
+    line-height: 1.33rem;
 }
 
 .aboutme__social {
@@ -262,14 +285,10 @@ nav a {
 }
 
 .aboutme__skills__container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    place-items: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    flex-wrap: wrap;
 }
 
 .aboutme__skill {
