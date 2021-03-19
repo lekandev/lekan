@@ -38,9 +38,7 @@ body {
     font-family: 'Josefin Sans', monospace;
 }
 
-.fa {
-    font-size: 15px;
-}
+
 
 /*===== Nav section =====*/
 nav {
@@ -97,12 +95,6 @@ nav a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    /* background-image: url("../assets/images/hero-bg.jpg");
-    background-position: center;
-    0
-    background-repeat: no-repeat;
-    background-color: var(--theme-color-1);
-    opacity: 0.2; */
 }
 
 .box {
@@ -181,7 +173,7 @@ nav a {
 }
 
 .hero__intro > a > button:hover {
-    transform: scale(1.08);
+    transform: scale(0.98);
     background-color: transparent;
     color: var(--text-secondary);
     border: 1px solid var(--theme-color-3);
@@ -252,16 +244,29 @@ nav a {
     /* transform: skewY(0.5deg); */
 }
 
+.aboutme__container > .fa {
+    font-size: 1.5rem;
+}
+
 .aboutme__img > img {
     object-fit: contain;
-    border-radius: 5px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all ease-in .3s;
+}
+
+.aboutme__img > img:hover {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .aboutme__title {
     margin-bottom: 10px;
     letter-spacing: 0.2rem;
     color: var(--text-primary);
+    font-family: 'Josefin Sans', monospace;
 }
+
 
 .aboutme__info {
     margin: 30px;
@@ -282,6 +287,7 @@ nav a {
 .aboutme__skills > h3 {
     color: var(--text-primary);
     letter-spacing: 0.2rem;
+    font-family: 'Josefin Sans', monospace;
 }
 
 .aboutme__skills__container {
@@ -440,6 +446,7 @@ nav a {
 .experience > h2 {
     color: var(--text-primary);
     margin-bottom: 3rem;
+    font-family: 'Josefin Sans', monospace;
 }
 
 .experience__container {
@@ -505,6 +512,7 @@ li {
     padding: 40px;
     color: var(--text-secondary);
     border-radius: 10px;
+    font-family: 'Josefin Sans', monospace;
 }
 
 .contact__details > p {
@@ -587,6 +595,7 @@ footer {
     place-content: center;
     margin: auto;
     color: var(--text-secondary);
+    font-family: 'Josefin Sans', monospace;
     /* border-top: 1px solid var(--theme-color-3); */
 }
 
