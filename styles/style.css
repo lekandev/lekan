@@ -398,6 +398,10 @@ nav a {
     margin-top: 10px;
 }
 
+.project__urls .fa {
+    margin-right: 10px;
+}
+
 .project__urls > a {
     color: var(--text-primary);
     /* padding: 8px;
