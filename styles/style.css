@@ -274,7 +274,8 @@ nav a {
 }
 
 .aboutme__social .fa {
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 1.7rem;
 }
 
 .aboutme__skills {
