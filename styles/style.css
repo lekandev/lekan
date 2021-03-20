@@ -399,20 +399,16 @@ nav a {
 }
 
 .project__urls .fa {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 5px;
 }
 
 .project__urls > a {
     color: var(--text-primary);
-    /* padding: 8px;
-    background-color: var(--theme-color-3);
-    border-radius: 200px;
-    text-decoration: none; */
 }
 
 .project__urls > a:first-child {
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 /* Media queries for project section */
