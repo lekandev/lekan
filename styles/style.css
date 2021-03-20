@@ -242,10 +242,6 @@ nav a {
     /* transform: skewY(0.5deg); */
 }
 
-.aboutme__container > .fa {
-    font-size: 2rem;
-}
-
 .aboutme__img > img {
     object-fit: contain;
     border-top-left-radius: 50%;
@@ -275,6 +271,10 @@ nav a {
 
 .aboutme__social {
     margin-top: 20px;
+}
+
+.aboutme__social .fa {
+    font-size: 2rem;
 }
 
 .aboutme__skills {
