@@ -405,6 +405,7 @@ nav a {
 
 .project__urls > a {
     color: var(--text-primary);
+    display: inline-block;
 }
 
 .project__urls > a:first-child {
