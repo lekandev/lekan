@@ -408,7 +408,7 @@ nav a {
 }
 
 .project__urls > a:first-child {
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
 /* Media queries for project section */
