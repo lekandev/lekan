@@ -404,6 +404,7 @@ nav a {
 
 .project__urls > a {
     color: var(--text-primary);
+    margin-right: 5px;
     /* padding: 8px;
     background-color: var(--theme-color-3);
     border-radius: 200px;
