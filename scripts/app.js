@@ -4,7 +4,6 @@ const submitBtn = document.querySelector(".submit");
 const thankYou = document.querySelector(".thank-you-msg");
 
 sideNav.addEventListener("click", () => {
-    console.log("yay, it works!!");
     sideNav.classList.toggle("fa-times");
 });
 
