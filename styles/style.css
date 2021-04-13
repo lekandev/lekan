@@ -420,6 +420,10 @@ nav a {
         padding-right: 30px;
     }
 
+    .projects__header {
+        margin-bottom: 3rem;
+    }
+
     .project {
         flex-direction: column;
         margin-bottom: 7rem;
