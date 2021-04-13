@@ -1,11 +1,13 @@
 console.log("Lekan is Live");
-const sideNav = document.querySelector(".res");
+const sideNav = document.querySelector(".fa-bars");
 const submitBtn = document.querySelector(".submit");
 const thankYou = document.querySelector(".thank-you-msg");
 
-// sideNav.addEventListener("click", () => {
-//     console.log("yay, it works!!");
-// });
+sideNav.addEventListener("click", () => {
+    console.log("yay, it works!!");
+    sideNav.classList.add("fa-times");
+    sideNav.classList.remove("fa-bars");
+});
 
 // submitBtn.addEventListener("click", function(e) {
 //     e.preventDefault();
