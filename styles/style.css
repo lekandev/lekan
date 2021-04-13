@@ -325,13 +325,6 @@ nav a {
     .aboutme__img {
         display: none;
     }
-    
-    .aboutme__skills__container {
-        flex: none;
-        flex-direction: column;
-        height: 200px;
-        overflow-y: scroll;
-    }
 }
 /*===== End of About me section =====*/
 
@@ -421,7 +414,7 @@ nav a {
     }
 
     .projects__header {
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
     }
 
     .project {
