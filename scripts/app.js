@@ -5,8 +5,7 @@ const thankYou = document.querySelector(".thank-you-msg");
 
 sideNav.addEventListener("click", () => {
     console.log("yay, it works!!");
-    sideNav.classList.add("fa-times");
-    sideNav.classList.remove("fa-bars");
+    sideNav.classList.toggle("fa-times");
 });
 
 // submitBtn.addEventListener("click", function(e) {
