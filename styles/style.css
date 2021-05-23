@@ -352,7 +352,6 @@ nav a {
     display: grid;
     place-content: center;
     font-style: 'Josefin Sans', monospace;
-    display: none;
 }
 
 .backend__projects--header {
