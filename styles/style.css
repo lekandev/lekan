@@ -168,6 +168,7 @@ nav a {
     background: var(--theme-color-3);
     transition: all ease-in 0.4s;
     cursor: pointer;
+    margin-bottom: 20px
 }
 
 .hero__intro > a > button:hover {
@@ -177,6 +178,19 @@ nav a {
     border: 1px solid var(--theme-color-3);
 }
 
+.hero__skills {
+    /* position: absolute; */
+    color: var(--text-primary);
+    max-width: 500px
+}
+
+.hero__skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 5px;
+}
+
 /* Media queries for hero section */
 @media screen and (max-width: 664px) {
     .hero__intro {
@@ -184,7 +198,7 @@ nav a {
     }
 
     .hero__name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         /* Eureka: I cried without this 😭 */
         width: min-content;
     }
@@ -277,40 +291,9 @@ nav a {
 .aboutme__social .fa {
     margin: 10px;
     font-size: 1.7rem;
-}
-
-.aboutme__skills {
-    width: 100%;
-    height: 100px;
-}
-
-.aboutme__skills > h3 {
     color: var(--text-primary);
-    letter-spacing: 0.2rem;
-    font-family: 'Josefin Sans', monospace;
 }
 
-.aboutme__skills__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-.aboutme__skill {
-    background: var(--theme-color-3);
-    color: var(--text-tertiary);
-    border-radius: 3px;
-    font-size: 0.7rem;
-    font-family: 'montserrat', sans-serif;
-    margin: 10px;
-    padding: 5px;
-    transition: 0.25s;
-}
-
-.aboutme__skill:hover {
-    transform: scale(1.05);
-}
 /* Media queries for aboutme section */
 @media screen and (max-width: 664px) {
     .aboutme {
@@ -319,15 +302,52 @@ nav a {
 
     .aboutme__container {
         flex: none;
-        width: 350px;
+        width: 300px;
         padding: 10px;
     }
 
     .aboutme__img {
         display: none;
     }
+
+    .aboutme__info {
+        margin: 15px;
+        line-height: 1.15rem;
+    }
 }
 /*===== End of About me section =====*/
+
+/*===== Services section =====*/
+.services {
+    display: grid;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin: 7rem 9rem;
+    gap: 50px
+}
+
+.services__single {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.services__single i {
+    color: var(--theme-color-3);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.services__single h3 {
+    color: var(--theme-color-3);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 664px) {
+    .services{
+        margin: 7rem 1.5rem;
+    }
+}
 
 /*===== Project section =====*/
 .projects {
@@ -343,7 +363,7 @@ nav a {
     text-align: center;
     color: var(--text-primary);
     margin-bottom: 7rem;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .backend__projects {
@@ -462,13 +482,17 @@ nav a {
     }
 
     .project__img > img {
-        width: 350px;
+        width: 340px;
     }
 
     .project__info {
         padding: 25px;
         border-top-right-radius: 0;
         border-bottom-left-radius: 5px;
+    }
+
+    .project__about {
+        font-size: 1.03rem
     }
 }
 /*===== End of Project section =====*/
