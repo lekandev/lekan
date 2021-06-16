@@ -18,3 +18,5 @@ let animatedBox = anime({
   duration: 1000,
   easing: linear,
 });
+
+AOS.init();
