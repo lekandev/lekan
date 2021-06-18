@@ -12,11 +12,11 @@ sideNav.addEventListener("click", () => {
 //     thankYou.innerHTML = "😁 Thank You, I'll get back to you shortly!";
 // })
 
-let animatedBox = anime({
-  targets: ".square",
-  translateY: 100,
-  duration: 1000,
-  easing: linear,
-});
-
-AOS.init();
+// PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+   navigator.serviceWorker.register('../sw.js').then( () => {
+    console.log('Service Worker Registered')
+   })
+ })
+}
