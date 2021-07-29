@@ -1,4 +1,6 @@
 console.log("Lekan is Live");
+
+// Sidebar toggle
 const sideNav = document.querySelector(".fa-bars");
 const submitBtn = document.querySelector(".submit");
 const thankYou = document.querySelector(".thank-you-msg");
@@ -15,7 +17,7 @@ if ('serviceWorker' in navigator) {
    })
  })
 }
-
+// Blog Posts section functionality
 const blogPostContainer = document.querySelector(".blog-posts__container");
 
 const GET_USER_ARTICLES = `
@@ -53,24 +55,31 @@ gql(GET_USER_ARTICLES, { page: 0 })
 
         // console.log(articles);
 
-        for (i = 0; i < article.length; i++) { console.log(article[i]); }
-        // let container = document.createElement('div');
+        // for (i = 0; i < article.length; i++) { console.log(article[i]); }
+        // let blogPost = document.createElement('div');
+        // blogPost.classList.add("blog-posts__post")
 
-        // articles.forEach(article => {
-        //     let title = document.createElement('h2');
-        //     title.innerText = article.title;
+        articles.forEach(article => {
+            let blogPost = document.createElement('div')
+            blogPost.classList.add('blog-posts__post')
 
-        //     let brief = document.createElement('p');
-        //     brief.innerText = article.brief;
+            blogPostContainer.appendChild(blogPost)
 
-        //     let link = document.createElement('a');
-        //     link.innerText = 'Read more...';
-        //     link.href = `https://catalins.tech/${article.slug}`;
+            let blogPostTitle = document.createElement('h2');
+            blogPostTitle.classList.add("blog-posts__post--title")
+            blogPostTitle.innerText = article.title;
 
-        //     container.appendChild(title);
-        //     container.appendChild(brief);
-        //     container.appendChild(link);
-        // })
+            let blogPostBrief = document.createElement('p');
+            blogPostBrief.classList.add("blog-posts__post--brief")
+            blogPostBrief.innerText = article.brief;
 
-        // document.querySelector('.app').appendChild(container);
+            let blogPostLink = document.createElement('a');
+            blogPostLink.classList.add("blog-posts__post--link")
+            blogPostLink.innerText = 'View';
+            blogPostLink.href = `https://lekandev.hashnode.dev/${article.slug}`;
+
+            blogPost.appendChild(blogPostTitle);
+            blogPost.appendChild(blogPostBrief);
+            blogPost.appendChild(blogPostLink);
+        })
 });

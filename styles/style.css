@@ -561,6 +561,50 @@ li {
 }
 /*===== End of Experience section =====*/
 
+/*===== Blog posts section =====*/
+.blog-posts {
+    margin: 150px;
+}
+
+.blog-posts__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+    gap: 50px;
+    color: var(--text-secondary);
+}
+
+.blog-posts__post {
+    /*width: 300px;*/
+    /*height: max-content;*/
+    border-radius: 10px;
+    padding: 20px;
+    background: var(--theme-color-2);
+    color: var(--text-secondary);
+}
+
+.blog-posts__post--title {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.blog-posts__post--brief {
+    margin-bottom: 15px;
+}
+
+.blog-posts__post--link {
+    color: var(--text-primary);
+}
+
+/* Media queries for experience section */
+@media screen and (max-width: 664px) {
+    .blog-post {
+        margin: 20px;
+    }
+}
+/*===== End of Blog posts section =====*/
+
 /*===== Contact Me section =====*/
 .contact {
     width: 100%;
@@ -672,7 +716,7 @@ footer a {
 
 @media screen and (max-width: 664px) {
     footer {
-        font-size: .7rem;
+        padding: 10px;
     }
 }
 /*===== End of Footer section =====*/
