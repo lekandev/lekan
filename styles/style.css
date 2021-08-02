@@ -599,7 +599,7 @@ li {
 
 /* Media queries for experience section */
 @media screen and (max-width: 664px) {
-    .blog-post {
+    .blog-posts {
         margin: 20px;
     }
 }
@@ -700,8 +700,7 @@ textarea:focus {
 footer {
     width: 100%;
     height: 80px;
-    display: grid;
-    place-content: center;
+    text-align: center;
     margin: auto;
     color: var(--text-secondary);
     font-family: 'Josefin Sans', monospace;
