@@ -566,6 +566,12 @@ li {
     margin: 150px;
 }
 
+.blog-posts > h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+}
+
 .blog-posts__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -586,7 +592,6 @@ li {
 .blog-posts__post--title {
     margin-bottom: 15px;
     color: var(--text-primary);
-    text-decoration: underline;
 }
 
 .blog-posts__post--brief {
@@ -601,6 +606,10 @@ li {
 @media screen and (max-width: 664px) {
     .blog-posts {
         margin: 20px;
+    }
+    
+    .blog-posts__container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 /*===== End of Blog posts section =====*/
