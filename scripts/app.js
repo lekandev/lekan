@@ -59,7 +59,7 @@ gql(GET_USER_ARTICLES, { page: 0 })
         // let blogPost = document.createElement('div');
         // blogPost.classList.add("blog-posts__post")
 
-        articles.slice(6, 0).forEach(article => {
+        articles.forEach(article => {
             let blogPost = document.createElement('div')
             blogPost.classList.add('blog-posts__post')
 
