@@ -59,7 +59,7 @@ gql(GET_USER_ARTICLES, { page: 0 })
         // let blogPost = document.createElement('div');
         // blogPost.classList.add("blog-posts__post")
 
-        articles.forEach(article => {
+        articles.slice(0, 6).forEach(article => {
             let blogPost = document.createElement('div')
             blogPost.classList.add('blog-posts__post')
 
@@ -83,3 +83,6 @@ gql(GET_USER_ARTICLES, { page: 0 })
             blogPost.appendChild(blogPostLink);
         })
 });
+
+// Load more Projects functionality
+const loadMore;
