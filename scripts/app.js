@@ -85,4 +85,3 @@ gql(GET_USER_ARTICLES, { page: 0 })
 });
 
 // Load more Projects functionality
-const loadMore;
