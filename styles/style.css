@@ -284,6 +284,10 @@ nav a {
     line-height: 1.33rem;
 }
 
+.hng-finalist {
+    color: var(--text-primary);
+}
+
 .aboutme__social {
     margin-top: 20px;
 }
@@ -319,11 +323,20 @@ nav a {
 
 /*===== Services section =====*/
 .services {
+    margin: 7rem 9rem;
+}
+
+.services > h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+}
+
+.services__container {
     display: grid;
     align-items: center;
     /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    margin: 7rem 9rem;
     gap: 50px
 }
 
@@ -333,18 +346,18 @@ nav a {
 }
 
 .services__single i {
-    color: var(--theme-color-3);
+    color: var(--text-primary);
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .services__single h3 {
-    color: var(--theme-color-3);
+    color: var(--text-primary);
     margin-bottom: 10px;
 }
 
 @media screen and (max-width: 664px) {
-    .services{
+    .services {
         margin: 7rem 1.5rem;
     }
 }
@@ -528,11 +541,15 @@ nav a {
 
 .experience__container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 50px;
 }
 
 .experience__column {
     padding: 25px;
-    width: 25rem;
+    width: 24rem;
 }
 
 .experience__column:first-child {
@@ -540,6 +557,10 @@ nav a {
 }
 
 .experience__column:nth-child(2) {
+    border-right: 1px solid var(--text-primary);
+}
+
+.experience__column:nth-child(4) {
     border-right: 1px solid var(--text-primary);
 }
 
@@ -567,6 +588,7 @@ li {
 @media screen and (max-width: 664px) {
     .experience__container {
         flex-direction: column;
+        row-gap: 30px;
     }
 
     .experience__column {
@@ -580,6 +602,15 @@ li {
     }
 
     .experience__column:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid var(--theme-color-3);
+    }
+
+    .experience__column:nth-child(3) {
+        border-bottom: 1px solid var(--theme-color-3);
+    }
+
+    .experience__column:nth-child(4) {
         border-right: none;
         border-bottom: 1px solid var(--theme-color-3);
     }
@@ -743,7 +774,7 @@ footer {
 
 footer a {
     background: linear-gradient(to bottom, transparent, var(--theme-color-3));
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
     text-decoration: none;
 }
 
