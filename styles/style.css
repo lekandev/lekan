@@ -46,6 +46,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
+    background: var(--theme-color-1);
+    z-index: 1;
 }
 
 .logo > img{
@@ -136,7 +139,7 @@ nav a {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
     font-weight: 100;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     /* anims */
     width: fit-content;
     color: transparent;
@@ -157,7 +160,7 @@ nav a {
     animation-delay: 1s;
 }
 
-.hero__intro > a > button {
+/* .hero__intro > a > button {
     text-decoration: none;
     width: 150px;
     height: 40px;
@@ -176,7 +179,7 @@ nav a {
     background-color: transparent;
     color: var(--text-secondary);
     border: 1px solid var(--theme-color-3);
-}
+} */
 
 .hero__skills {
     /* position: absolute; */
@@ -254,7 +257,6 @@ nav a {
     overflow: hidden;
     color: var(--text-secondary);
     padding: 40px 10px 10px 10px;
-    /* transform: skewY(0.5deg); */
 }
 
 .aboutme__img > img {
@@ -617,6 +619,54 @@ li {
 }
 /*===== End of Experience section =====*/
 
+/*===== Resume section =====*/
+.resume {
+    margin: 100px 90px;
+    padding: 50px 30px;
+    text-align: center;
+    border-top: 1px solid var(--theme-color-3);
+    border-bottom: 1px solid var(--theme-color-3);
+}
+
+.resume p {
+    color: var(--text-secondary);
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.resume > a > button {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--text-tertiary);
+    background: var(--theme-color-3);
+    transition: all ease-in 0.4s;
+    cursor: pointer;
+}
+
+.resume > a > button:hover {
+    transform: scale(0.98);
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--theme-color-3);
+}
+
+/* Media queries for resume section */
+@media screen and (max-width: 664px) {
+    .resume {
+        margin: 60px 30px;
+        padding: 50px 20px;
+    }
+
+    .resume p {
+        font-size: 1.3rem;
+    }
+}
+/*===== End of Resume section =====*/
+
 /*===== Blog posts section =====*/
 .blog-posts {
     margin: 150px;
@@ -673,7 +723,7 @@ li {
 /*===== Contact Me section =====*/
 .contact {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -739,6 +789,7 @@ textarea:focus {
 /* Media queries for experience section */
 @media screen and (max-width: 664px) {
     .contact {
+        height: 80vh;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -764,12 +815,11 @@ textarea:focus {
 /*===== Footer section =====*/
 footer {
     width: 100%;
-    height: 80px;
+    height: 70px;
     text-align: center;
     margin: auto;
     color: var(--text-secondary);
     font-family: 'Josefin Sans', monospace;
-    /* border-top: 1px solid var(--theme-color-3); */
 }
 
 footer a {
