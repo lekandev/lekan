@@ -669,7 +669,7 @@ li {
 
 /*===== Blog posts section =====*/
 .blog-posts {
-    margin: 150px;
+    margin: 3rem 150px;
 }
 
 .blog-posts > h2 {
@@ -723,7 +723,7 @@ li {
 /*===== Contact Me section =====*/
 .contact {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -815,7 +815,7 @@ textarea:focus {
 /*===== Footer section =====*/
 footer {
     width: 100%;
-    height: 70px;
+    height: 80px;
     text-align: center;
     margin: auto;
     color: var(--text-secondary);
