@@ -381,6 +381,53 @@ nav a {
     /* padding-top: 3rem; */
 }
 
+.mobile__projects {
+    color: var(--text-secondary);
+    margin-bottom: 8rem;
+    font-style: 'Josefin Sans', monospace;
+}
+
+.mobile__projects--header {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+.mobile__projects--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    place-content: center;
+    gap: 30px;
+}
+
+.mobile__project {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.mobile__project img {
+    /* position: absolute; */
+}
+
+.mobile__project--overlay {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mobile__project--info {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--theme-color-2);
+    border-radius: 5px;
+}
+
 .backend__projects {
     color: var(--text-secondary);
     margin-bottom: 8rem;
