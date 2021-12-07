@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#45A29E">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <!-- minified css -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.min.css">
     <!-- javascript -->
     <script defer src="./scripts/app.js"></script>
     <!-- animejs library -->
@@ -116,87 +116,120 @@
     <section class="projects" id="projects">
         <h2 class="projects__header">Real World Projects</h2>
 
-        <div class="mobile__projects">
-            <h2 class="mobile__projects--header">Mobile Projects</h2>
-            <div class="mobile__projects--container">
-                <div class="mobile__project">
-                    <img src="./assets/images/tesla-app-clone.png" alt="Tesla app project">
-                    <div class="mobile__project--overlay">
-                        <div class="mobile__project--info">
-                            <h2 class="mobile__project--header">Tesla app clone</h2>
-                            <p>
-                                Interface clone of The Tesla mobile app made
-                                Typescript and React Native
-                            </p>
-                        </div>
+        <div class="web3__projects">
+            <h2 class="web3__projects--header">Web3 Projects</h2>
+
+            <div class="project" data-aos="fade-down">
+                <div class="project__img">
+                    <img src="assets/images/epicnfts.png" alt="">
+                </div>
+                <div class="project__info">
+                    <h2 class="project__title">NFT minting app</h2>
+                    <p class="project__about">
+                        A Web3 react app that interacts with a smart contract with
+                        allowing users with connected wallets (metamask) to mint a
+                        random generated three word NFT.  
+                    </p>
+                    <small class="project__tech">
+                        React · Solidity · Ethers
+                    </small>
+                    <div class="project__urls">
+                        <i class="fa fa-link"></i><a href="https://epic-nfts.lekandev.repl.co/">Live Site</a>
+                        <i class="fa fa-github"></i><a href="#">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-aos="fade-down">
+                <div class="project__img">
+                    <img src="assets/images/waaveportal.png" alt="">
+                </div>
+                <div class="project__info">
+                    <h2 class="project__title">wave Portal</h2>
+                    <p class="project__about">
+                        A Web3 react app and smart contract allowing
+                        users send a wave with a message using their connected wallet
+                        addresses, it also returns past waves.
+                    </p>
+                    <small class="project__tech">
+                        React · Solidity · Ethers
+                    </small>
+                    <div class="project__urls">
+                        <i class="fa fa-link"></i><a href="https://wave-portal-azure.vercel.app/">Live Site</a>
+                        <i class="fa fa-github"></i><a href="#">Source Code</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="backend__projects">
-            <h2 class="backend__projects--header">Backend Projects</h2>
-            <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>Menu restaurant API</h3>
+
+        <!-- combine mobile projects and backend projects section for now -->
+        <div class="backend-mobile-combo">
+
+            <div class="mobile__projects">
+                <h2 class="mobile__projects--header">Mobile Projects</h2>
+                <div class="mobile__projects--container">
+                    <div class="mobile__project">
+                        <img src="./assets/images/tesla-app-clone.png" alt="Tesla app project">
+                        <div class="mobile__project--overlay">
+                            <div class="mobile__project--info">
+                                <h2 class="mobile__project--header">Tesla app clone</h2>
+                                <p>
+                                    Interface clone of The Tesla mobile app made
+                                    Typescript and React Native
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="backend__project--info">
-                    Menu Restaurant API, it allows CRUD operations to be made (create, read,
-                    update, delete)on Menus, made with Typescript, Nodejs, Express and MongoDb
-                </div>
-                <a href="https://github.com/lekandev/Menu-Restaurant-API">View Project</a>
             </div>
-            <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>Climate change live API</h3>
+    
+            <div class="backend__projects">
+                <h2 class="backend__projects--header">Backend Projects</h2>
+                <div class="backend__project">
+                    <div class="backend__project--header">
+                        <h3>Menu restaurant API</h3>
+                    </div>
+                    <div class="backend__project--info">
+                        Menu Restaurant API, it allows CRUD operations to be made (create, read,
+                        update, delete)on Menus, made with Typescript, Nodejs, Express and MongoDb
+                    </div>
+                    <a href="https://github.com/lekandev/Menu-Restaurant-API">View Project</a>
                 </div>
-                <div class="backend__project--info">
-                    API showing scraped data from various news sources about climate change.
-                    made with Node, Express, axios and Cheerio for traversing html
+                <div class="backend__project">
+                    <div class="backend__project--header">
+                        <h3>Climate change live API</h3>
+                    </div>
+                    <div class="backend__project--info">
+                        API showing scraped data from various news sources about climate change.
+                        made with Node, Express, axios and Cheerio for traversing html
+                    </div>
+                    <a href="https://github.com/lekandev/climate-change-news-api">View Project</a>
                 </div>
-                <a href="https://github.com/lekandev/climate-change-news-api">View Project</a>
+                <div class="backend__project">
+                    <div class="backend__project--header">
+                        <h3>Bookstore App</h3>
+                    </div>
+                    <div class="backend__project--info">
+                        Backend for a Bookstore application made with NodeJs, Express and
+                        MongoDb, it allows authenticated user to fetch and search books
+                        and allows only Admins to create, update and delete books
+                    </div>
+                    <a href="https://github.com/lekandev/Bookstore-app">View Project</a>
+                </div>
+                <div class="backend__project">
+                    <div class="backend__project--header">
+                        <h3>CRUD people API</h3>
+                    </div>
+                    <div class="backend__project--info">
+                        A People API that allows for the creating, updating, fetching and
+                        and deleting of data, made with NodeJs, Express and MongoDb
+                    </div>
+                    <a href="https://github.com/lekandev/nodejs-CRUD-app">View Project</a>
+                </div>
             </div>
-            <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>Bookstore App</h3>
-                </div>
-                <div class="backend__project--info">
-                    Backend for a Bookstore application made with NodeJs, Express and
-                    MongoDb, it allows authenticated user to fetch and search books
-                    and allows only Admins to create, update and delete books
-                </div>
-                <a href="https://github.com/lekandev/Bookstore-app">View Project</a>
-            </div>
-            <!-- <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>Endangered Species API</h3>
-                </div>
-                <div class="backend__project--info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ea alias eius sequi maiores natus dignissimos facilis id quibusdam?
-                </div>
-                <a href="https://github.com">View Project</a>
-            </div>
-            <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>Expense Tracker API</h3>
-                </div>
-                <div class="backend__project--info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ea alias eius sequi maiores natus dignissimos facilis id quibusdam?
-                </div>
-                <a href="https://github.com">View Project</a>
-            </div> -->
-            <div class="backend__project">
-                <div class="backend__project--header">
-                    <h3>CRUD people API</h3>
-                </div>
-                <div class="backend__project--info">
-                    A People API that allows for the creating, updating, fetching and
-                    and deleting of data, made with NodeJs, Express and MongoDb
-                </div>
-                <a href="https://github.com/lekandev/nodejs-CRUD-app">View Project</a>
-            </div>
+
         </div>
+
 
         <h2 class="frontend__projects--header">Frontend Projects</h2>
         
