@@ -644,6 +644,11 @@ nav a {
     border-right: 1px solid var(--text-primary);
 }
 
+
+.experience__column:nth-child(5) {
+    border-right: 1px solid var(--text-primary);
+}
+
 .experience__workplace {
     color: var(--text-primary);
 }
